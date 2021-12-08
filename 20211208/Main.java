@@ -1,3 +1,40 @@
+/*
+Generics - 입력되는 객체의 자료형을 강제한다.
+          
+
+ArrayList pitches = new ArrayList();
+
+
+pitches 라는 ArraysList에 담을수 있는 자료형은 String뿐이다.  
+  ArrayList<String> pitches = new ArrayList<string>();
+
+
+*/
+import java.util.ArrayList;
+public class Main {
+   public static void main(String[]srgs) {
+
+     ArrayList<String> aList = new ArrayList<String>();
+      
+      aList.add("hello");
+      aList.add("java");
+    //generics을 사용하여 자료형을 선언하면 그 이후로는 자료형에 대한 형변환 Casting이 필요 없다.
+    //이미 자바가 aList에는 반드시 <Stiing>자료형만 추가된다는것을 알고있다.
+    //generics를 사용하면 형변환에 대한 불필요한 코딩과 잘못입력된 형변환형의 예외를 방지할수 있다.
+
+    //  String hello = (String)aList.get(0);
+    // String java = (String)aList.get(1);
+    String hello = (String)aList.get(0);
+    String java = (String)aList.get(1);
+    //Casting 강제 형변환 객체가 된 형을 꺼낼수 없으니 다시 글자(string)로 바꿔서 도출
+
+     System.out.println(hello);
+     System.out.println(java);
+
+   }
+} 
+
+
 /* List 리스트
      배열과 비슷한 자료형, 크기가 정해지지 않고 동적으로 변한다. 배열은 그 크기가 생성시 정해지지만 리스트는 그 크기가 정해지지 않아 원하는 만큼 자유롭게 담을수 있다.
 
