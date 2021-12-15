@@ -1,0 +1,212 @@
+/*객체 지향이란?? - 밥을 짓기위해 밥솥을 사와야 하는데, 밥솥이 객체이고,
+ 이때 사용하는 연잔자는 new이다. 밥솥 b = new 밥솥(); */
+
+import java.sql.SQLOutput;
+import java.util.Calendar;
+//if의 삼항연산자
+//public class IfExam {
+//    public static void main(String[] args) {
+//       int b1 = (5 > 4) ? 50 : 40;
+//        System.out.println(b1);
+//        //삼항연산자는 이런 형식으로 만든다.
+//    } 결과 = 50
+//}
+       // 위의 삼항 연산자를 if로 바꾸기
+
+//public class IfExam {
+//    public static void main(String[] args) {
+//        int b1 = 0;
+//        if (5 > 4) {
+//            b1 = 50;
+//        } else {
+//            b1 = 40;
+//        }
+//        System.out.println(b1);
+//    } 결과 = 50
+//}
+      //switch문- switch은 switch, case, default, break;란 키워드를 사용합니다.
+//    public class IfExam {
+//         public static void main(String[] args) {
+//             int value = 1; //value를 1로 초기화
+//             switch (value) {
+//                 case 1:
+//                     System.out.println("1");
+//                     //break;
+//                 case 2:
+//                     System.out.println("2");
+//                     //break;
+//                 case 3:
+//                     System.out.println("3");
+//                     //break;
+//                 default:
+//                     System.out.println("그 외 다른 숫자");//if의 else와 비슷한 역할,생략 가능
+//             } //이 식은 같은 값부터 그 외에도 모든 값을 출력한다.
+//               //이때 break;를 쓰면 if else처럼 하나만 출력할수 있다. 즉 switch문 밖으로 빠져나옴
+//          //결과 = 1 2 3 그외 다른 숫자 , break;를 쓰면 결과 = 1
+//         }
+//     }
+//
+import java.util.Calendar;
+import java.util.Scanner;
+
+//public class IfExam{
+//    public static void main(String[] args) {
+//        int month = Calendar.getInstance().get(Calendar.MONTH) + 1;
+//        String season= "";
+//        switch(month) {
+//            case 12:
+//            case 1:
+//            case 2:
+//                season = "겨울";
+//                break;
+//            case 3:
+//            case 4:
+//            case 5:
+//                season = "봄";
+//                break;
+//            case 6:
+//            case 7:
+//            case 8:
+//                season = "여름";
+//                break;
+//            case 9:
+//            case 10:
+//            case 11:
+//                season = "가을";
+//                break;
+//        }
+//                System.out.println("지금은" + month +"월이고," +season + "입니다." );
+//        // 결과 = 지금은 12월이고 겨울입니다. 이 예제를 12월에 실행해서 12월,겨울이라고 나옴
+//    }
+//}
+//반복문 - while문(어떤일을 반복 수행하고 싶을때 사용) while,do while,for문 제공
+//public class IfExam {
+//    public static void main(String[] args) {
+//        int i = 0;
+//
+//        while (i < 10) {
+//            //결과가 참이기 때문에 무한 루프(반복) 상태이다.
+//            System.out.println(i);
+//            i++;//증감연산자
+//        }//결과 0123456789
+//    }
+//}
+// 문제 : 1부터 10까지 출력하세요. 대신 짝수일때만 i가 출력되도록 하세요.
+//public class IfExam {
+//    public static void main(String[] args) {
+//        int i = 1;
+//        while (i < 11) {
+//            if (i % 2 == 0) {
+//                System.out.println(i);
+//            }
+//            i++;
+//        } // 결과 = 2 4 6 8 10
+//    }
+//}
+//do while문 - while는 조건이 참일경우에만 실행했지만, 참이 아니더라도 무조건 한번은 싫행해야 하는 구문
+//do {do 반복할 문장}while()
+import java.util.Scanner;
+//public class IfExam {
+//    public static void main(String[] args) {
+//        int value = 0;
+//        int sum = 0;
+//        Scanner scan = new Scanner(System.in);
+//
+//        do {
+//            value = scan.nextInt();
+//            sum += value;
+//        } while (value < 100);
+//        System.out.println("sum :" +sum);
+//    } //결과 20 40 50 101 sum:211
+//}
+// 반복문 for문 - for(변수 초기화; 조건식; 증감식) { 실행할 문장들; } 이렇게 한줄로 들어간다.
+
+//public class IfExam {
+//    public static void main(String[] args) {
+//        int total = 0;
+//        for (int i = 1; i <=100; i++) {
+//            if(i % 2 != 0){
+//                continue;   //i는 짝수일때만 total에 저장되고 홀수인경우 continue를 만나 total에 누적되지 않고 1을 더함.
+//            }
+//            total = total + i;
+//        }
+//        System.out.println(total);
+//    } // 결과 = 2550
+//}
+//public class IfExam  {
+//    public static void main(String[] args) {
+//        int total = 0;
+//        for(int i = 0; i <=100; i++ ){
+//            total = total + i;
+//            if( i == 50){
+//                break;
+//            }
+//        }
+//        System.out.println(total);
+//    } // 결과 1275
+//}
+// 문제 : 1~100까지의 숫자중 짝수만 출력하세요.
+//public class IfExam {
+//    public static void main(String[] args) {
+//        for (int i = 1; i <=100; i++){
+//            if( i % 2 == 0){
+//                System.out.println(i);
+//            }
+//        } // 결과 = 2 4 6 8 10 ... 98 100
+//    }
+//}
+//배열 데이터형이 같은 변수가 여러개 필요할때 사용 - int[] i = {1,2,3,4}; 4개를 저장할수 있음.
+//public class IfExam {
+//    public static void main(String[] args) {
+//        int[] array2 = new int[]{1,2,3,4};
+//        int[] array3 = {1,2,3,4};
+//
+//        int value = array3[2];
+//        System.out.println(value);
+//    }//결과 3 - array3의 2번째 index를 value란 int형 변수명에 넣고 value를 출력하면 3이 나온다. 이렇게 새로운 변수를 넣음.
+//}
+//
+//문제 : 1~100까지의 coffee라는 이름으로 정숫값을 담을수 있는 배열을 선언하세요.
+//public class IfExam {
+//    public static void main(String[] args) {
+//        int[] coffee = new int[100];
+//        for (int i = 0; i < coffee.length; i++) { //정확하게 100번 반복이니 for를 사용한다.
+//            coffee[i] = i + 1;
+//            System.out.println(coffee[i]);
+//        } //결과 = 1 2 3 4 5 6 7....98 99 100
+
+//    }
+//
+//}
+public class IfExam {
+    public static void main(String[] args) {
+        int[] coffee = new int[100];
+
+        for (int i = 0; i < coffee.length ; i++){
+            coffee[i] = i + 1;//밖에다가 선언
+        }          /*for블록안에 결괏값을 선언하면 for블록 바깥에는 사용하지못한다. 값을 지속적으로 저장하지 못한다. 값을 더할 변수는 for블록
+////         밖에다가 선언한다!!!!!!!! */
+        int sum = 0;
+        for (int i = 0; i <coffee.length; i++ ) {
+            sum = sum + coffee[i]; //밖에다가 선언
+        }
+        System.out.println(sum);
+    } // 결과 = 5050
+}
+// List는 배열과 비슷한 자료형이나, 크기가 정해지지 않고 동적으로 변한(원하는 만큼 담을수 있다.)
+  // ArrayList를 실제로 많이 쓴다.
+/*자주 쓰이는 메서드 get, size, remove , contains이 있다.
+    1.get은 특정 인덱스를 가져 올수 있다. get()
+    2.size는 리스트의 갯수를 확인 size()
+    3.contains 해당 포함 여부 확인 contains()
+    4.remove 해당 객체를 삭제하거나 리턴 */
+
+//String은 문자열 타입이다.
+/* 문자열에서 많이 쓰이는 메서드
+*   1. equals- 두개의 문자열이 동일한니 비교하여 결과 리텀
+*   2. indexOf - 특정문자가 시작되는 위치를 리턴
+*   3. replaceAll - 문자열중 특정 다른 문자열으로 리턴
+*   4. toUpperCase - 소문자를 대문자로 치환
+*   5. substring - 특정 부분을 뽑아낼 경우 사용한다. (미만으로 끝위치는 포함X)
+*   */
+
