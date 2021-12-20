@@ -1,0 +1,2 @@
+module Javainter2 {
+}
