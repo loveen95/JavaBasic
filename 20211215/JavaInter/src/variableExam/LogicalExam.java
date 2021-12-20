@@ -20,12 +20,20 @@ public class LogicalExam {
          if ('0' <= ch && ch <='9') {
         	 System.out.println("입력하신 문자는 숫자입니다");
         	 
-         } else if (ch >='a' && ch <= 'z' || ch >= 'A' && ch <= 'Z' ) {
+         } else if (ch >='a' && ch <= 'z' || ch >= 'a' && ch <= 'z'  ) {
         	 System.out.println("입력하신 문자는 영문자입니다.");
          }
         	 
          
 }
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		/* 논리 연산자는 둘 이상의 조건을 and 또는 or연결하여 하나의 식으로 표현한다.
@@ -38,6 +46,8 @@ public class LogicalExam {
 		 * 
 		 * 
 		 * */ 
+		
+		
 		
 		
 		
