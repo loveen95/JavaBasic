@@ -95,7 +95,58 @@ public class ArrayExam {
 //				avg = sum / score.length;
 //				System.out.println("총합:" + sum );
 //				System.out.println("평균:" + avg );
-//}
+		
+		//배열 :444657953
+		
+//		int[] numArr = {4,4,4,6,5,7,9,7,5,3}; //실제 데이터
+//		int[] counter = new int[10]; 
+//		// counter[numArr[i]]= counter[numArr[i]]+1;
+//		
+//		for(int i = 0; i <numArr.length;i++) {
+//			counter[numArr[i]]++;  
+//		}
+//		for(int i = 0; i <numArr.length; i++) {
+//			System.out.println(i+"의 갯수:" + counter[i]);
+////		}
+//	String[] name = new String[3];//길이가 3인 String배열 생성
+//    name[0] = "kim";
+//    name[1] = "song";
+//    name[2] = "park";
+//    
+//    String[] name2= {"kim","song","park"};
+//    String[] name3= new String[]{"kim","song","park"};
+//    
+//    for(String each : name  )
+//    System.out.println(each + "");
+    
+    //char배열과 String 배열을 변환.
+//   char[] chArr = {'A','B','C'};
+//   String str = new String(chArr);   
+//   char[] tmp = str.toCharArray();
+		//Quiz src라는 String에 "ABCDE"를 만들어
+		//chArr이라는 char[]로 변환하여 출력
+		
+		String src = "ABCDE";
+		
+		for(int i = 0; i<src.length(); i++) {
+			char ch = src.charAt(i);
+			System.out.println("src.charAt("+i+"):" +ch);
+		}
+		//char[] tmp = src.toCharArray();
+		
+	
+		
+		
+		
+
+     
+    
+    
+    
+    
+    
+    
+    
 }
 }
-}
+
