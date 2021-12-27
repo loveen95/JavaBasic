@@ -36,7 +36,7 @@ public class loginServlet extends HttpServlet {
 	
 	String res = "<html><h3>user ID : " + uid + "</h3>";
 	res += "<h3>user Password : "+ups + "</h3>";
-	res += "</html>";
+	res += "</html>"; //메모리가 늘어나는 개념
 	
 	response.getWriter().print(res);
 	
