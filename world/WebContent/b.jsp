@@ -7,12 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-a.jsp 입니다. 
-<%
-response.sendRedirect("b.jsp"); 
-
-
-
-%>
+b.jsp 파일 입니다. 
 </body>
 </html>
