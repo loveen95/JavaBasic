@@ -206,18 +206,19 @@ public class StringExam {
 		 System.out.println("확장자는" + fullName.substring(1,fullName.indexOf('.')));
 		 
 			
+
 		 
 		 
 		 
-		 
-		 
+
+		
 		 
 		 
 		 
 		 
 			 
 		 }
-	 
+       
 	}
 }
 
