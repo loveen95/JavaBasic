@@ -11,7 +11,8 @@
   String uid = request.getParameter("id");
   String ups= request.getParameter("ps");
 
-  String dbps = "0000";
+ String dbps = "0000";
+ // String dbps = new String();
   
   if(ups.equals(dbps)) {
 	  session.setAttribute("id", uid);
