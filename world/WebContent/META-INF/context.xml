@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context>
+	<Resource name="jdbc/testdb" auth="Container"
+		type="javax.sql.Database" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/testdb?serverTimeZone=UTC"
+		username="root" password="0000" maxTotal="16" maxIdel="4"
+		maxWaitMillis="-1"/>
+	
+
+</context>
