@@ -1,4 +1,4 @@
-package first_java;
+package Inheritance;
 
 public class Person {
     public final String firstName;

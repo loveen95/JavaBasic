@@ -1,4 +1,4 @@
-package first_java;
+package Inheritance;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -6,6 +6,9 @@ import java.util.Random;
 public class Deck {
     private ArrayList<Card> cards;
 
+    public Deck(){
+        cards = new ArrayList<Card>();
+    }
     public ArrayList<Card> getCards(){
         return cards;
     }
